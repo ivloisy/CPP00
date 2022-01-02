@@ -6,7 +6,7 @@
 #    By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/31 12:03:12 by ivloisy           #+#    #+#              #
-#    Updated: 2021/12/31 19:28:24 by ivloisy          ###   ########.fr        #
+#    Updated: 2022/01/02 12:33:55 by ivloisy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	@echo "\033[36m\n$@ creation\t\t\t\t🛠\n"
 	$(CC) $(FLAG) -o $@ $+
-	@echo "\033[35m\n$@ has been created with success !\t\t🌈\n"
+	@echo "\033[35m\n$@ has been created with success !\t🌈\n"
 
 $(OBJ): $(SRC)
 	@echo "\033[32m\nSources files compilation\t\t\t⚙️\n"

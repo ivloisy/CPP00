@@ -6,11 +6,25 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/31 19:28:39 by ivloisy           #+#    #+#             */
-/*   Updated: 2021/12/31 19:28:59 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/02 13:00:05 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int main(void)
+#include <iostream>
+#include <locale>
+#include <cstdlib>
+
+int	main(int ac, char **av)
 {
-    return 1;
+	std::locale	loc;
+	if (ac < 2)
+		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
+	else
+	{
+		for (int i = 1; i < ac; i++)
+			for (int j = 0; av[i][j]; j++)
+				std::cout << std::toupper(av[i][j], loc);
+	}
+	std::cout << std::endl;
+	return (EXIT_SUCCESS);
 }
