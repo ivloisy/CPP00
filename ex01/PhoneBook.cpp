@@ -6,7 +6,7 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 02:29:35 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 02:58:42 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/04 03:03:43 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ bool	PhoneBook::_cmd_add(void)
 	int			index;
 	
 	index = this->_total;
-	if (this->_total == 1)
+	if (this->_total == 8)
 	{
 		std::cout << "\nThe PhoneBook is full." << std::endl;
 		index = this->chooseIndex();
