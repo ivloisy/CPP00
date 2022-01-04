@@ -1,35 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/02 16:00:46 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 02:31:44 by ivloisy          ###   ########.fr       */
+/*   Created: 2022/01/04 02:30:48 by ivloisy           #+#    #+#             */
+/*   Updated: 2022/01/04 02:30:49 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-# define CONTACT_HPP
+#ifndef	PHONEBOOK_HPP
+# define PHONEBOOK_HPP
+
+# include "Contact.hpp"
 
 # include <iostream>
 # include <string>
+# include <cstdlib>
+# include <cstdio>
 
-class	Contact
+class PhoneBook
 {
 	private:
-		std::string	_first_name;
-		std::string	_last_name;
-		std::string	_nickname;
-		std::string	_phone_number;
-		std::string	_darkest_secret;
-		
+		Contact	_contact[8];
+		int		_total;
+		bool	_cmd_add(void);
+		bool	_cmd_search(int n);
+
 	public:
-		Contact(void);
-		~Contact();
-		void		setContact(std::string info[5]);
-		std::string	getInfo(int n);
+		PhoneBook(void);
+		~PhoneBook();
+		bool		getCommand(void);
+		int			chooseIndex(void);
+		int			chooseContact(void);
+		std::string	printInfo(std::string s);
+		void		printContact(void);
 };
 
 #endif
