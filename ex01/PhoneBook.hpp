@@ -6,7 +6,7 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 02:30:48 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 15:22:01 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/04 22:32:33 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <string>
 # include <cstdlib>
 # include <cstdio>
+# include <cstring>
 
 class PhoneBook
 {

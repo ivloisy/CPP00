@@ -6,7 +6,7 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:17:27 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 19:53:09 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/04 23:47:22 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Account::Account(int initial_deposit) :
 	_nbDeposits(0),
 	_nbWithdrawals(0)
 {
-	_totalAmount += _amount;
+	_totalAmount += this->_amount;
 	_displayTimestamp();
 	std::cout
 	<< "index:" << this->_accountIndex

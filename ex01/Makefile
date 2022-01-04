@@ -6,7 +6,7 @@
 #    By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/31 12:03:12 by ivloisy           #+#    #+#              #
-#    Updated: 2022/01/04 02:22:39 by ivloisy          ###   ########.fr        #
+#    Updated: 2022/01/04 22:29:51 by ivloisy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = PhoneBook
 
 CC = clang++
 
-FLAG = -Wall -Werror -Wextra
+FLAG = -Wall -Werror -Wextra -std=c++98
 
 SRC = PhoneBook.cpp Contact.cpp main.cpp
 
