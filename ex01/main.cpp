@@ -1,35 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/02 16:00:46 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 01:52:44 by ivloisy          ###   ########.fr       */
+/*   Created: 2022/01/04 01:54:28 by ivloisy           #+#    #+#             */
+/*   Updated: 2022/01/04 02:05:15 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-# define CONTACT_HPP
+#include "PhoneBook.hpp"
 
-# include <iostream>
-# include <string>
-
-class	Contact
+int	main(void)
 {
-	private:
-		std::string	_first_name;
-		std::string	_last_name;
-		std::string	_nickname;
-		std::string	_phone_number;
-		std::string	_darkest_secret;
-		
-	public:
-		Contact(void);
-		~Contact();
-		void		setContact(std::string info[5]);
-		std::string	getInfo(int n);
-};
+	PhoneBook	phonebook;
 
-#endif
+	while (phonebook.getCommand())
+		;
+	return (EXIT_SUCCESS);
+}

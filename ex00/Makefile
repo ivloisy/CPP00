@@ -6,7 +6,7 @@
 #    By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/31 12:03:12 by ivloisy           #+#    #+#              #
-#    Updated: 2022/01/02 12:33:55 by ivloisy          ###   ########.fr        #
+#    Updated: 2022/01/04 01:48:16 by ivloisy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ $(OBJ): $(SRC)
 
 clean:
 	@echo "\033[33m\nRemove objects files\t\t--->\t\t🗑\n"
-	/bin/rm -f $(OBJ)
+	/bin/rm -rf $(OBJDIR)
 
 fclean: clean
 	@echo "\033[33m\nRemove $(NAME) file\t\t--->\t\t🗑\n"

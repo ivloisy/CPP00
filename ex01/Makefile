@@ -6,17 +6,17 @@
 #    By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/31 12:03:12 by ivloisy           #+#    #+#              #
-#    Updated: 2022/01/02 23:39:58 by ivloisy          ###   ########.fr        #
+#    Updated: 2022/01/04 02:22:39 by ivloisy          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = phonebook
+NAME = PhoneBook
 
 CC = clang++
 
 FLAG = -Wall -Werror -Wextra
 
-SRC = PhoneBook.cpp# Contact.cpp
+SRC = PhoneBook.cpp Contact.cpp main.cpp
 
 HDR = PhoneBook.hpp Contact.hpp
 
@@ -39,7 +39,7 @@ $(OBJ): $(SRC) $(HDR)
 
 clean:
 	@echo "\033[33m\nRemove objects files\t\t--->\t\t🗑\n"
-	/bin/rm -f $(OBJ)
+	/bin/rm -rf $(OBJDIR)
 
 fclean: clean
 	@echo "\033[33m\nRemove $(NAME) file\t\t--->\t\t🗑\n"
