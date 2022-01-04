@@ -6,7 +6,7 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 02:29:35 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 13:58:52 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/04 15:28:24 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,7 +166,7 @@ int	PhoneBook::chooseContact(void)
 	return (i);
 }
 
-std::string	PhoneBook::printInfo(std::string s)
+std::string	PhoneBook::printInfo(std::string s) const
 {
 	if (s.size() < 10)
 	{

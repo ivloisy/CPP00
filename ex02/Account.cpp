@@ -1,35 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/02 16:00:46 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 15:12:50 by ivloisy          ###   ########.fr       */
+/*   Created: 2022/01/04 14:17:27 by ivloisy           #+#    #+#             */
+/*   Updated: 2022/01/04 15:06:52 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-# define CONTACT_HPP
+#include "Account.hpp"
 
-# include <iostream>
-# include <string>
+#include <iostream>
+#include <ctime>
 
-class	Contact
+Account::Account(void)
 {
-	private:
-		std::string	_first_name;
-		std::string	_last_name;
-		std::string	_nickname;
-		std::string	_phone_number;
-		std::string	_darkest_secret;
-		
-	public:
-		Contact(void);
-		~Contact();
-		void		setContact(std::string info[5]);
-		std::string	getInfo(int n) const;
-};
+}
 
-#endif
+Account::Account(int initial_deposit)
+{
+}
+
+Account::~Account(void)
+{
+}
+
+static void	Account::_displayTimestamp(void)
+{
+	time_t		rawtime;
+	struct tm	*timeinfo;
+	char		buffer[19];
+
+	time (&rawtime);
+	timeinfo = localtime (&rawtime);
+
+	strftime (buffer,19,"[%Y%m%d_%H%M%S] ",timeinfo);
+	std::cout << buffer;
+}

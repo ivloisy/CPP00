@@ -6,7 +6,7 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 01:51:33 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 01:52:39 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/04 15:13:53 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	Contact::setContact(std::string info[5])
 	return ;
 }
 
-std::string	Contact::getInfo(int n)
+std::string	Contact::getInfo(int n) const
 {
 	if (n == 0)
 		return (this->_first_name);

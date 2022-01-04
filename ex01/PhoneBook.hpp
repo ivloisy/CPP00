@@ -6,7 +6,7 @@
 /*   By: ivloisy <ivloisy@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 02:30:48 by ivloisy           #+#    #+#             */
-/*   Updated: 2022/01/04 13:58:57 by ivloisy          ###   ########.fr       */
+/*   Updated: 2022/01/04 15:22:01 by ivloisy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class PhoneBook
 		bool		getCommand(void);
 		int			chooseIndex(void);
 		int			chooseContact(void);
-		std::string	printInfo(std::string s);
+		std::string	printInfo(std::string s) const;
 		void		printContact(void);
 };
 
